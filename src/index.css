@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    /* Fondo Zinc-950 (#09090b) estándar en diseños de Emil Kowalski / Linear */
+    background-color: #09090b;
+    color: #fafafa;
+    /* Suavizado de fuentes para tipografía impecable (Impeccable layout) */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  /* Selección de texto elegante en tono esmeralda/cian sutil */
+  ::selection {
+    background-color: rgba(255, 255, 255, 0.14);
+    color: #ffffff;
+  }
+}
+
+/* Utilidad para curvas de animación física (estilo Emil Kowalski) */
+.ease-out-expo {
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}

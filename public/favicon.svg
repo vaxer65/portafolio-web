@@ -1,23 +1,35 @@
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <style>
-    .back {
-      fill: #0A0A0B;
-      stroke: #00C49A;
-      stroke-width: 1;
-      filter: drop-shadow(0 0 8px rgba(0, 196, 154, 0.2));
-    }
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Fondo Negro Puro estilo consola VEX -->
+  <rect width="64" height="64" rx="14" fill="#050505" />
+  <rect x="2" y="2" width="60" height="60" rx="12" stroke="#00ff9d" stroke-opacity="0.35" stroke-width="1.5" />
 
-    .text {
-      font-family: 'Space Grotesk', sans-serif;
-      font-weight: 700;
-      font-size: 48px;
-      letter-spacing: -2px;
-      fill: white;
-      text-anchor: middle;
-      dominant-baseline: central;
-    }
-  </style>
+  <!-- CAPA 1: Sombra 3D de alambre (Wireframe desplazado como en VEX) -->
+  <g transform="translate(2.5, 2.5)" stroke="#00ff9d" stroke-width="1" stroke-opacity="0.75" fill="none">
+    <!-- Sombra Primera V -->
+    <path d="M8 18 H14 V30 H11 V36 H14 V42 H17 V36 H20 V30 H17 V18 H23 V30 H20 V36 H17 V42 H14 V46 H11 V42 H8 V30 Z" />
+    <!-- Sombra Punto central -->
+    <rect x="29" y="40" width="6" height="6" />
+    <!-- Sombra Segunda V -->
+    <path d="M41 18 H47 V30 H44 V36 H47 V42 H50 V36 H53 V30 H50 V18 H56 V30 H53 V36 H50 V42 H47 V46 H44 V42 H41 V30 Z" />
+  </g>
 
-  <rect class="back" width="100" height="100" rx="18" />
-  <text class="text">VV</text>
-</svg>  
+  <!-- CAPA 2: Bloques Pixel Sólidos en Verde Neón (#00ff9d) -->
+  <g fill="#00ff9d">
+    <!-- Primera V pixelada -->
+    <rect x="8" y="18" width="5" height="12" />
+    <rect x="10.5" y="30" width="5" height="8" />
+    <rect x="13" y="38" width="5" height="8" />
+    <rect x="15.5" y="30" width="5" height="8" />
+    <rect x="18" y="18" width="5" height="12" />
+
+    <!-- Punto (.) -->
+    <rect x="29.5" y="40" width="5" height="6" />
+
+    <!-- Segunda V pixelada -->
+    <rect x="41" y="18" width="5" height="12" />
+    <rect x="43.5" y="30" width="5" height="8" />
+    <rect x="46" y="38" width="5" height="8" />
+    <rect x="48.5" y="30" width="5" height="8" />
+    <rect x="51" y="18" width="5" height="12" />
+  </g>
+</svg>

@@ -35,6 +35,13 @@ export function HomePage() {
                 </div>
 
                 <div className="space-y-3">
+                    {/* Insignia estilo VEX Core */}
+                    <div className="inline-flex items-center gap-3 font-mono text-xs text-[#00ff9d]">
+                        <span className="rounded border border-[#00ff9d]/40 bg-[#00ff9d]/10 px-2 py-0.5 font-bold tracking-widest shadow-[2px_2px_0px_rgba(0,255,157,0.4)]">
+                            V.V
+                        </span>
+                        <span className="text-zinc-500">System Core · Zero-Trust Architecture</span>
+                    </div>
                     <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-zinc-100">
                         Valentín Valle
                     </h1>

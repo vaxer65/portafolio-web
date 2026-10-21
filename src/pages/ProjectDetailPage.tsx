@@ -81,19 +81,33 @@ export function ProjectDetailPage() {
 
             {/* Bloques Bento de Especificación Técnica */}
             <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
-                <div className="md:col-span-2 rounded-2xl border border-white/[0.07] bg-zinc-900/30 p-6 space-y-4">
-                    <h3 className="flex items-center gap-2 text-sm font-semibold text-zinc-200 uppercase tracking-wider">
-                        <CheckCircle2 className="h-4 w-4 text-emerald-400" />
-                        Arquitectura y Enfoque Técnico
-                    </h3>
-                    <p className="text-sm leading-relaxed text-zinc-400">
-                        Este sistema fue diseñado aplicando principios de modularidad y separación de responsabilidades.
-                        En esta sección podrás incrustar capturas de pantalla, diagramas de arquitectura, videos de
-                        demostración o el ejecutable interactivo del proyecto.
-                    </p>
+                <div className="md:col-span-2 rounded-2xl border border-white/[0.07] bg-zinc-900/30 p-6 space-y-6">
+                    <div className="space-y-3">
+                        <h3 className="flex items-center gap-2 text-sm font-semibold text-zinc-200 uppercase tracking-wider">
+                            <CheckCircle2 className="h-4 w-4 text-emerald-400" />
+                            Arquitectura y Enfoque Técnico
+                        </h3>
+                        <p className="text-sm leading-relaxed text-zinc-400">
+                            {project.architecture}
+                        </p>
+                    </div>
+
+                    <div className="space-y-3 border-t border-white/[0.06] pt-5">
+                        <h4 className="text-xs font-semibold uppercase tracking-wider text-zinc-400">
+                            Características de Ingeniería Implementadas
+                        </h4>
+                        <ul className="space-y-2.5">
+                            {project.features.map((feature, index) => (
+                                <li key={index} className="flex items-start gap-2.5 text-sm text-zinc-300">
+                                    <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400" />
+                                    <span>{feature}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
 
-                <div className="rounded-2xl border border-white/[0.07] bg-zinc-900/30 p-6 space-y-4">
+                <div className="rounded-2xl border border-white/[0.07] bg-zinc-900/30 p-6 space-y-4 h-fit">
                     <h3 className="flex items-center gap-2 text-sm font-semibold text-zinc-200 uppercase tracking-wider">
                         <Cpu className="h-4 w-4 text-emerald-400" />
                         Tecnologías Utilizadas

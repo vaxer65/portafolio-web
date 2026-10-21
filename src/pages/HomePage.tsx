@@ -1,3 +1,4 @@
+import { CertificationsSection } from '../sections/CertificationsSection';
 import { useState } from 'react';
 import { BentoGrid } from '../components/bento/BentoGrid';
 import { BentoCard } from '../components/bento/BentoCard';
@@ -19,8 +20,8 @@ export function HomePage() {
     const categories: { label: string; value: FilterType }[] = [
         { label: 'Todos', value: 'all' },
         { label: 'Móvil', value: 'mobile' },
+        { label: 'IA & Agentes', value: 'ai' },
         { label: 'Web', value: 'web' },
-        { label: 'Backend', value: 'backend' },
         { label: 'Simulación', value: 'simulation' },
     ];
 
@@ -111,6 +112,9 @@ export function HomePage() {
 
             {/* SECCIÓN 3: Trayectoria Profesional */}
             <TrajectorySection />
+
+            {/* SECCIÓN 4: Cursos y Certificados */}
+            <CertificationsSection />
         </div>
     );
 }

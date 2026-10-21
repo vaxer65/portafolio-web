@@ -53,7 +53,7 @@ export function BentoCard({ project }: BentoCardProps) {
                 </div>
 
                 <div className="flex items-center gap-2">
-                    <span className="rounded-full border border-white/[0.06] bg-white/[0.02] px-2.5 py-0.5 text-[11px] font-medium text-zinc-400">
+                    <span className="shrink-0 whitespace-nowrap rounded-full border border-white/[0.06] bg-white/[0.02] px-2.5 py-0.5 text-[11px] font-medium text-zinc-400">
                         {project.status}
                     </span>
 

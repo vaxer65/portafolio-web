@@ -10,7 +10,7 @@ export const CERTIFICATIONS_DATA: CertificationItem[] = [
         badgeText: '6 ECTS · CSV: 077-9ccad01c7bd6808efefaed3ad2ed57a6-001',
         details:
             'Formación internacional especializada en seguridad informática, protección de infraestructuras académicas y mitigación de vulnerabilidades.',
-        verifyUrl: 'https://verifirma.unir.net/CSV/',
+        verifyUrl: '/certificados/unir-ciberseguridad.pdf',
     },
     {
         id: 'pypizza-guaranda-2026',
@@ -21,5 +21,6 @@ export const CERTIFICATIONS_DATA: CertificationItem[] = [
         badgeText: 'Certificado de Participación Técnica',
         details:
             'Participación activa en el encuentro de desarrollo, aprendizaje e intercambio de conocimientos tecnológicos en torno al ecosistema Python en Guaranda, Ecuador.',
+        verifyUrl: '/certificados/pypizza-2026.jpg',
     },
 ];

@@ -54,7 +54,7 @@ export function CertificationsSection() {
                                     rel="noreferrer"
                                     className="inline-flex items-center gap-1 text-xs font-medium text-zinc-300 transition-colors hover:text-emerald-400"
                                 >
-                                    Verificar CSV
+                                    Ver Credencial
                                     <ExternalLink className="h-3 w-3" />
                                 </a>
                             )}

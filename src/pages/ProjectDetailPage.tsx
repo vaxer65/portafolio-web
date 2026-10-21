@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft, ExternalLink, Code2, Cpu, CheckCircle2 } from 'lucide-react';
 import { PROJECTS_DATA } from '../data/projects.data';
@@ -5,6 +6,10 @@ import { PROJECTS_DATA } from '../data/projects.data';
 export function ProjectDetailPage() {
     // 1. Capturamos el ID que viene en la URL (/proyecto/:id)
     const { id } = useParams<{ id: string }>();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [id]);
 
     // 2. Buscamos el proyecto correspondiente en nuestra capa de datos
     const project = PROJECTS_DATA.find((p) => p.id === id);
